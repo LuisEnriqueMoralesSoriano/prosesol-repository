@@ -1,69 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="" />
-<meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Colors">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<title>Prosesol</title>
+    <!-- Title -->
+    <title> Prosesol </title>
 
-<link rel="stylesheet" type="text/css"
-	th:href="@{/css/custom/css-custom.css}" />
-<!-- Custom stlylesheet -->
-<link type="text/css" rel="stylesheet" th:href="@{/css/error.css}" />
+    <!-- Favicon -->
+    <link rel="icon" th:href="@{/img/core-img/favicon.ico}">
+    <script src="https://kit.fontawesome.com/20afb9912e.js"></script>
 
-<!-- Jquery -->
-<script type="text/javascript"
-	src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" th:href="@{/style.css}">
 
-<!-- Main styles for this application-->
-<link th:href="@{/css/style.css}" rel="stylesheet" />
-<link th:href="@{/vendors/pace-progress/css/pace.min.css}"
-	rel="stylesheet" />
-<link th:href="@{/vendors/perfect-scrollbar/perfect-scrollbar.css}"
-	rel="stylesheet" />
-	
-<!-- DataTable -->
-<link rel="stylesheet" type="text/css"
-	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" />
-<link rel="stylesheet" type="text/css"
-	href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.bootstrap.min.css" />
-<link rel="stylesheet" type="text/css"
-	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
-	
-
-<!-- Bootstrap -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous" />
-
-<!-- Fontawesome -->
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-	crossorigin="anonymous" /> 
-
-<!-- Pace Progress bar -->
-<link th:href="@{/vendors/pace-progress/pace-theme-minimal.css}"
-	rel="stylesheet" />
-<script type="text/javascript" th:src="@{/vendors/pace-progress/pace.min.js}"></script>
-
-
-<!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Cabin:400,700"
-	rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Montserrat:900"
-	rel="stylesheet" />
-
-<!-- Datepicker -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" th:href="@{/css/responsive.css}">
 
 </head>
 <body>

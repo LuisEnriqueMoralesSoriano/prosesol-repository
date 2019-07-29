@@ -1,0 +1,394 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .classynav > ul > li > a > i {
+        width: 16px;
+    }
+
+    .widget-head-color-box {
+        padding: 20px;
+    }
+
+    .widget-member-thumb {
+        width: 130px;
+        height: auto;
+        margin: auto;
+    }
+
+    .widgets-team-title > h2 {
+        font-size: 24px;
+    }
+
+    .widget-head-box {
+        padding: 20px;
+    }
+
+    .top-search-bar form input {
+        width: 300px;
+    }
+
+    .user-meta-data .topbar-laguage-tab .language--icon img {
+        margin: 0 30px;
+    }
+
+    .side-menu-area {
+        left: -280px;
+    }
+
+    .side-menu-off .side-menu-area {
+        left: 0;
+    }
+
+    .sidemenu-container {
+        margin-left: 0;
+    }
+
+    .side-menu-off .sidemenu-container {
+        margin-left: 260px;
+    }
+
+    .logo-trigger-area .logo {
+        margin-right: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .article-title > h2 {
+        font-size: 30px;
+    }
+
+    .bg-boxshadow {
+        padding: 15px;
+    }
+
+    .light-thumb {
+        width: 47%;
+    }
+
+    .top-search-bar form input {
+        width: 250px;
+    }
+
+    .user-meta-data .topbar-laguage-tab .language--icon img {
+        margin: 0 30px;
+    }
+
+    .side-menu-area {
+        left: -280px;
+    }
+
+    .side-menu-off .side-menu-area {
+        left: 0;
+    }
+
+    .sidemenu-container {
+        margin-left: 0;
+    }
+
+    .side-menu-off .sidemenu-container {
+        margin-left: 260px;
+    }
+
+    .logo-trigger-area .logo {
+        margin-right: 50px;
+    }
+
+    .comingsoon_area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #clock {
+        font-size: 30px;
+    }
+
+    #clock span {
+        font-size: 13px;
+    }
+
+    .subscribe_bar > p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .middle-box {
+        max-width: 300px !important;
+        padding: 15px !important;
+    }
+
+    .middle-box h1 {
+        font-size: 100px;
+    }
+
+    .bg-boxshadow {
+        padding: 20px !important;
+        display: block !important;
+    }
+
+    .appwork-faq-area dl dt {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .breadcrumb-area .breadcrumb .breadcrumb-item,
+    .breadcrumb-area .breadcrumb .breadcrumb-item a {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .copywrite-text {
+        display: block;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .copywrite-text > p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .footer--nav--style ul li a {
+        font-size: 12px;
+    }
+
+    .article-title > h2 {
+        font-size: 26px;
+    }
+
+    .btn.articles-btn {
+        margin-bottom: 15px;
+    }
+
+    .ibox.wizard {
+        padding: 20px;
+    }
+
+    .ibox-title-wizard > h5 {
+        font-size: 18px;
+    }
+
+    .wizard-title {
+        font-size: 16px;
+    }
+
+    .jumbotron-wizard > h4 {
+        font-size: 18px;
+    }
+
+    .widget-member-thumb {
+        width: 130px;
+        height: auto;
+        margin: auto;
+    }
+
+    .widget-head-color-box {
+        padding: 20px;
+    }
+
+    .card-body.users {
+        padding: 15px;
+    }
+
+    .btn-users {
+        margin-bottom: 10px;
+    }
+
+    .sweet-alert-use-code {
+        padding: 20px;
+    }
+
+    .profile--thumb {
+        width: 150px;
+        height: auto;
+    }
+
+    .masonry-grid-item--width3 {
+        width: 260px;
+    }
+
+    .light-thumb {
+        width: 100%;
+    }
+
+    .top-search-bar form input {
+        width: 250px;
+    }
+
+    .user-meta-data .topbar-laguage-tab .language--icon img {
+        margin: 0 20px;
+    }
+
+    .side-menu-area {
+        left: -280px;
+    }
+
+    .side-menu-off .side-menu-area {
+        left: 0;
+    }
+
+    .sidemenu-container {
+        margin-left: 0;
+    }
+
+    .side-menu-off .sidemenu-container {
+        margin-left: 260px;
+    }
+
+    .page-top-bar-area {
+        padding: 0 15px;
+    }
+
+    .logo-trigger-area .logo {
+        margin-right: 30px;
+        max-width: 35px;
+    }
+
+    .top-search-bar {
+        display: none;
+    }
+
+    .logo-trigger-area .logo .big-logo {
+        display: none;
+    }
+
+    .logo-trigger-area .logo .small-logo {
+        display: block;
+    }
+
+    .profile-data {
+        width: 290px;
+    }
+
+    .notifications-data {
+        width: 290px;
+        right: -108px;
+    }
+
+    .widget-head-box {
+        padding: 20px;
+    }
+
+    .table td,
+    .table th {
+        padding: 10px 3px;
+    }
+
+    .table td {
+        font-size: 11px;
+    }
+
+    .mail-ontact > a {
+        font-size: 11px;
+    }
+
+    .mail-subject > a {
+        font-size: 11px;
+    }
+
+    .articals-btn {
+        margin-top: 15px;
+    }
+
+    .fc-toolbar .fc-right {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .fc .fc-toolbar > * > :first-child {
+        font-size: 22px;
+    }
+
+    .ct-label {
+        font-size: 12px;
+    }
+
+    .comingsoon_area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #clock {
+        font-size: 24px;
+    }
+
+    #clock span {
+        font-size: 12px;
+    }
+
+    .subscribe_bar > p {
+        font-size: 13px;
+    }
+
+    .btn.btn-primary.inbox {
+        margin-top: 15px;
+    }
+
+    .widget-bg-icon > i {
+        font-size: 60px;
+    }
+
+    .widget-bg-icon {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .breadcrumb-area .breadcrumb .breadcrumb-item,
+    .breadcrumb-area .breadcrumb .breadcrumb-item a {
+        font-size: 14px;
+    }
+
+    .top-search-bar {
+        display: block;
+    }
+
+    .top-search-bar form input {
+        width: 150px;
+        padding: 0 15px;
+    }
+
+    .top-search-bar form button {
+        width: 22px;
+    }
+
+    .notifications-data {
+        right: 0;
+    }
+
+    .fc-toolbar .fc-center {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .breadcrumb-area .breadcrumb .breadcrumb-item,
+    .breadcrumb-area .breadcrumb .breadcrumb-item a {
+        font-size: 16px;
+    }
+
+    .middle-box {
+        max-width: 400px !important;
+    }
+
+    .top-search-bar form input {
+        width: 200px;
+    }
+
+    .table td,
+    .table th {
+        padding: 6px;
+    }
+
+    .articals-btn {
+        margin-top: 0;
+    }
+
+    .btn.btn-primary.inbox {
+        margin-top: 0;
+    }
+
+    .table td {
+        font-size: 13px;
+    }
+}

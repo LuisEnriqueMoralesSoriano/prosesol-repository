@@ -1,42 +1,131 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/head :: head"></head>
-<meta charset="utf-8" />
-<body
-	class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-	<header th:replace="fragments/header :: header"></header>
-	<div class="app-body">
-		<div th:replace="fragments/sidebar :: sidebar"></div>
+    <meta charset="UTF-8">
+<body>
+	<div class="page-wrapper">
+		<!-- Page Top Bar Area -->
+		<div th:replace="fragments/header :: header"></div>
+		<div class="layout-container-area mt-70">
+			<!-- Side Menu Area -->
+			<div th:replace="fragments/sidebar :: sidebar"></div>
 
-		<main class="main">
+			<!-- Layout Container -->
+			<div class="layout-container sidemenu-container mt-100">
 
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item active">Home</li>
-		</ol>
+				<!-- bread crumb Area -->
 
-		<div class="container-fluid">
-			<div class="animated fadeIn">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="card">
-							<div class="card-header">Bienvenido a la plataforma
-								Prosesol</div>
-							<div class="card-body">
-								<div class="clearfix"></div>
-								<hr>
+
+				<div class="container-fluid">
+					<div class="row justify-content-center">
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Widget Content -->
+							<div class="widget-content-style lazur-bg zoom-effect mb-30">
 								<div class="row">
-								
+									<div class="col-4">
+										<i class="fa fa-users fa-5x"></i>
+									</div>
+									<div class="col-8 text-right">
+										<span> Afiliados Activos</span>
+										<h2 class="widget-content--text color-white">1,300</h2>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Widget Content -->
+							<div class="widget-content-style lazur-bg zoom-effect mb-30">
+								<div class="row">
+									<div class="col-4">
+										<i class="fa fa-user-plus fa-5x"></i>
+									</div>
+									<div class="col-8 text-right">
+										<span> Candidatos</span>
+										<h2 class="widget-content--text color-white">260</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Widget Content -->
+							<div class="widget-content-style lazur-bg zoom-effect mb-30">
+								<div class="row">
+									<div class="col-4">
+										<i class="fas fa-people-carry fa-5x"></i>
+									</div>
+									<div class="col-8 text-right">
+										<span> Beneficios</span>
+										<h2 class="widget-content--text color-white">30</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Widget Content -->
+							<div class="widget-content-style yellow-bg zoom-effect mb-30">
+								<div class="row">
+									<div class="col-4">
+										<i class="fas fa-hands-helping fa-5x"></i>
+									</div>
+									<div class="col-8 text-right">
+										<span> Asistencias Activas</span>
+										<h2 class="widget-content--text color-white">12</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-8 col-sm-12">
+							<!-- Contact Box -->
+							<div class="contact-box mb-50">
+								<div class="row align-items-center">
+									<div class="col-6">
+										<!-- Thumb Title -->
+										<div class="contact-thumb-title">
+											<img th:src="@{img/logos/logo.png}" alt="">
+											<div class="cont-team-titl">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-6">
+										<!-- Team Details -->
+										<div class="contact-team-details">
+											<h5>Bienvenido a la plataforma de administración Prosesol</h5>
+<!-- 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing -->
+<!-- 												elit. Accusantium esse temporibus, est blanditiis maiores -->
+<!-- 												enim?</p> -->
+<!-- 											<p> -->
+<!-- 												<i class="fa fa-map-marker"></i> Riviera State 32/106 -->
+<!-- 											</p> -->
+<!-- 											Team Address -->
+<!-- 											<div class="team-contact-add"> -->
+<!-- 												<p> -->
+<!-- 													Twitter, Inc.<span><br>795 Folsom Ave, Suite -->
+<!-- 														600<br> San Francisco, CA 94107</span> -->
+<!-- 												</p> -->
+<!-- 												<h6>P:(123) 456-7890</h6> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
+
 				</div>
+
+
 			</div>
+
 		</div>
-		</main>
 	</div>
 	<footer th:replace="fragments/footer :: footer"></footer>
-
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<meta charset="utf-8" />
+<body
+	class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+	<header th:replace="fragments/header :: header"></header>
+	<div class="app-body">
+		<div th:replace="fragments/sidebar :: sidebar"></div>
+
+		<main class="main">
+
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item ">Home</li>
+			<li class="breadcrumb-item ">Incidencias</li>
+			<li class="breadcrumb-item active">Resultado de la búsqueda</li>
+		</ol>
+
+		<div class="container-fluid">
+			<div class="animated fadeIn">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card card-accent-primary">
+							<div class="card-header">Incidencias</div>
+							<div class="card-body">
+								<div class="clearfix"></div>
+								<hr>
+								<div class="row">
+									<div class="col-md-12">
+										<table class="table table-bordered" id="dataTable"
+											width="100%" cellspacing="0">
+											<thead>
+												<tr>
+													<th>Nombre Completo</th>
+													<th>Teléfono Fijo</th>
+													<th>Teléfono Móvil</th>
+													<th>Clave</th>
+													<th>Estado</th>
+													<th>Municipio</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr th:each="afiliado : ${afiliados}">
+													<td th:text="${afiliado.nombre} + ' ' +${afiliado.apellidoPaterno} + ' ' + ${afiliado.apellidoMaterno}"></td>
+													<td th:text="${afiliado.telefonoFijo}"></td>
+													<td th:text="${afiliado.telefonoMovil}"></td>
+													<td th:text="${afiliado.clave}"></td>
+													<td th:text="${afiliado.entidadFederativa}"></td>
+													<td th:text="${afiliado.municipio}"></td>
+													<td>
+														<a th:href="@{/incidencias/crear/} + ${afiliado.id}"
+														   class="btn btn-square btn-primary btn-sm">
+														   Crear Incidencia</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+	</div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+
+</body>
+
+</html>

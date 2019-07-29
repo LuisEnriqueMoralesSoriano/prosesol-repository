@@ -7,21 +7,98 @@
 
 <body>
 	<!-- Sidebar -->
-	<div class="sidebar wrap" th:fragment="sidebar">
+	<div class="side-menu-area" th:fragment="sidebar">
+
+		<div class="classy-nav-container breakpoint-off">
+			<!-- Classy Menu -->
+			<nav class="classy-navbar justify-content-between" id="classyNav">
+
+				<!-- Navbar Toggler -->
+				<div class="classy-navbar-toggler">
+					<span class="navbarToggler"><span></span><span></span><span></span></span>
+				</div>
+
+				<!-- Menu -->
+				<div class="classy-menu">
+					<!-- close btn -->
+					<div class="classycloseIcon">
+						<div class="cross-wrap">
+							<span class="top"></span><span class="bottom"></span>
+						</div>
+					</div>
+
+					<!-- Nav Start -->
+					<div class="classynav">
+						<ul>
+							<li><a th:href="@{/home}"><i class="fas fa-columns"></i>
+									Dashboard</a></li>
+
+							<li><a th:href="@{/homeAsistencia}"><i class="fas fa-hands-helping"></i>
+									Centro de Asistencia</a></li>
+
+							<li><a th:href="@{/afiliados/ver}"><i class="fas fa-user"></i>
+									Afiliados</a></li>
+
+							<li><a th:href="@{/home}"><i class="fas fa-user-plus"></i>
+									Candidatos</a></li>
+
+							<li><a href="#"><i class="fas fa-book"></i> Catálogos</a>
+								<ul class="dropdown">
+									<li><a href="#">- Prosesol</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/servicios/ver}">- Servicios</a></li>
+											<li><a th:href="@{/beneficios/ver}">- Beneficios</a></li>
+											<li><a th:href="@{/periodos/ver}">- Periodos</a></li>
+										</ul></li>
+									<li><a href="#">- Equipo</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/centros/ver}">- Centros de Asistencia</a></li>
+											<li><a th:href="@{/cuentas/ver}">- Cuentas</a></li>
+											<li><a th:href="@{/promotores/ver}">- Promotores</a></li>
+										</ul></li>
+									<li><a href="#">- Accesos</a>
+										<ul class="dropdown">
+											<li><a th:href="@{/perfiles/ver}">- Perfiles</a></li>
+											<li><a th:href="@{/usuarios/ver}">- Usuarios</a></li>
+										</ul></li>
+								</ul></li>
+
+							<li><a href="#"><i class="fas fa-file-import"></i>
+									Operaciones</a>
+								<ul class="dropdown">
+									<li><a th:href="@{/afiliados/ver}">- Por definir</a></li>
+								</ul></li>
+
+							<li><a href="#"><i class="fas fa-scroll"></i> Reportes</a>
+								<ul class="dropdown">
+									<li><a th:href="@{/afiliados/ver}">- por definir</a></li>
+								</ul></li>
+						</ul>
+					</div>
+					<!-- Nav End -->
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<div class="sidebar wrap">
 		<nav class="sidebar-nav">
 			<ul class="nav">
-				<li class="nav-item"><a class="nav-link" th:href="@{/}">
-						<i class="nav-icon fas fa-home"></i> Home
+				<li class="nav-item"><a class="nav-link" th:href="@{/}"> <i
+						class="nav-icon fas fa-home"></i> Home
 				</a></li>
 
-				<li class="nav-title" sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Sistema</li>
+				<li class="nav-title"
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Sistema</li>
 
-				<li sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
+				<li
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
 					class="nav-item nav-dropdown"><a
 					class="nav-link nav-dropdown-toggle"> <i
 						class="nav-icon fas fa-tools"></i> Config
 				</a>
-					<ul class="nav-dropdown-items" sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">
+					<ul class="nav-dropdown-items"
+						sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">
 						<li class="nav-item"><a class="nav-link"
 							th:href="@{/usuarios/ver}"> <i class="nav-icon icon-puzzle"></i>
 								Usuarios
@@ -33,9 +110,11 @@
 					</ul></li>
 
 
-				<li class="nav-title" sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Administración</li>
+				<li class="nav-title"
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Administración</li>
 
-				<li sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
+				<li
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
 					class="nav-item nav-dropdown"><a
 					class="nav-link nav-dropdown-toggle"> <i
 						class="nav-icon fas fa-cogs"></i> Catálogos
@@ -65,15 +144,16 @@
 								Beneficios
 						</a></li>
 						<li class="nav-item"><a class="nav-link"
-							th:href="@{/centros/ver}"> <i class="nav-icon"></i>
-								Centros de Asistencia
+							th:href="@{/centros/ver}"> <i class="nav-icon"></i> Centros
+								de Asistencia
 						</a></li>
 					</ul></li>
 
 
 				<li class="nav-title">Operación</li>
 
-				<li sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
+				<li
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
 					class="nav-item nav-dropdown"><a
 					class="nav-link nav-dropdown-toggle"> <i
 						class="nav-icon fas fa-user-md"></i> Carga Masiva
@@ -81,7 +161,7 @@
 					<ul class="nav-dropdown-items">
 						<li class="nav-item"><a class="nav-link"
 							th:href="@{/cargaMasiva/afiliados}"> <i class="nav-icon"></i>
-							Afiliados
+								Afiliados
 						</a></li>
 					</ul></li>
 
@@ -93,25 +173,25 @@
 					<ul class="nav-dropdown-items">
 						<li class="nav-item"><a class="nav-link"
 							th:href="@{/incidencias/buscar}"> <i class="nav-icon"></i>
-							Nueva Incidencia
+								Nueva Incidencia
 						</a></li>
-						<li class="nav-item"><a class="nav-link"
-							href="#"> <i class="nav-icon"></i>
-								Seguimiento
+						<li class="nav-item"><a class="nav-link" href="#"> <i
+								class="nav-icon"></i> Seguimiento
 						</a></li>
 					</ul></li>
 
-				<li class="nav-title" sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Reportes</li>
+				<li class="nav-title"
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')">Reportes</li>
 
-				<li sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
+				<li
+					sec:authorize="hasRole('ROLE_ADMINISTRADOR') or hasRole('ROLE_USUARIO')"
 					class="nav-item nav-dropdown"><a
 					class="nav-link nav-dropdown-toggle"> <i
 						class="nav-icon fas fa-tools"></i> Afiliados
 				</a>
 					<ul class="nav-dropdown-items">
-						<li class="nav-item"><a class="nav-link"
-							href="#"> <i class="nav-icon"></i>
-								Pendiente
+						<li class="nav-item"><a class="nav-link" href="#"> <i
+								class="nav-icon"></i> Pendiente
 						</a></li>
 					</ul></li>
 			</ul>
